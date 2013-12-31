@@ -1,0 +1,29 @@
+safe:             false
+port:             7988
+baseurl:          /  # usually the GitHub project slug
+url:              http://localhost:7988/
+
+source:           src
+destination:      _gh_pages
+plugins:          src/_plugins
+
+permalink:        pretty
+paginate:         5
+timezone:         America/New_York
+markdown:         redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+
+title:            Dave Gandy
+twitter:          davegandy
+
+fontawesome:
+  version:        4.0.3
+bootstrap:
+  version:        3.0.2
+jquery:
+  version:        1.10.2
+google_analytics:
+  tracking_id:    UA-40821077-1
+typekit:
+  embed_code:     jlt5fmx

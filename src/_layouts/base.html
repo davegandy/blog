@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+  <!-- Basic Page Needs
+ ================================================== -->
+  <meta charset="utf-8" />
+  <title>{{ site.title }}{% if page.title %} &mdash; {{ page.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.title }} &mdash; {{ site.tagline }} ">
+  <meta name="author" content="Dave Gandy">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- CSS
+ ================================================== -->
+
+  <link rel="stylesheet" href="{{ site.baseurl }}assets/css/pygments.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}assets/css/site.css" media="screen">
+
+  <!-- Le fav and touch icons -->
+  <link rel="shortcut icon" href="{{ site.baseurl }}assets/ico/favicon.ico">
+
+  {% include typekit.html %}
+  {% include tracking.html %}
+</head>
+<body>
+<div class="wrap"> <!-- necessary for sticky footer. wrap all content except footer -->
+  {% include header.html %}
+
+  <div class="container">
+    {{ content }}
+  </div>
+  <div class="push"><!-- necessary for sticky footer --></div>
+</div>
+
+{% include footer.html %}
+{% include footer-js.html %}
+
+</body>
+</html>
