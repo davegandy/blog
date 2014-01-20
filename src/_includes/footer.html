@@ -1,9 +1,10 @@
 <nav class="navbar navbar-default navbar-static-bottom footer" role="navigation">
   <div class="container">
-    <ul class="nav navbar-nav pull-none margin-auto">
+    <ul class="nav navbar-nav">
       <li><a href="{{ site.baseurl }}">Home</a></li>
-      {% if site.posts.size > 1 %}<li><a href="{{ site.baseurl }}articles">Articles</a></li>{% endif %}
-      <li><a href="http://twitter.com/{{ site.twitter }}">@{{ site.twitter }}</a></li>
+      {% if site.posts.size > 1 %}<li><a href="{{ site.baseurl }}articles">All Articles</a></li>{% endif %}
+      <li><a href="http://twitter.com/{{ site.twitter }}">Twitter</a></li>
+      <li><a href="http://github.com/{{ site.github }}">Github</a></li>
     </ul>
   </div>
 </nav>

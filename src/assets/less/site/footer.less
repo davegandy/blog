@@ -18,3 +18,23 @@ html, body { height: 100%; }
   .push { height: @footer-height + @footer-margin-top + 1; }
   .footer { margin-top: @footer-margin-top; }
 }
+
+.footer .navbar-nav {
+  float: none;
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
+  text-align: center;
+  li {
+    display: inline;
+    line-height: @navbar-height;
+  }
+  li > a {
+    padding-top: 42px;
+    padding-bottom: 42px;
+    display: inline;
+  }
+  li + li:before {
+    content: "•";
+  }
+}

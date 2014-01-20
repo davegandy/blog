@@ -3,7 +3,7 @@ layout: base
 ---
 
 <section class="row">
-  <div class="col-sm-10 col-sm-offset-1">
+  <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
     <div class="post">
       <h1><a href="{{ post.url }}">{{ page.title }}</a></h1>
       <p class="date"><a href="http://twitter.com/{{ page.author }}">@{{ page.author }}</a> wrote this on {{ page.date | date_to_string }}</p>
@@ -12,22 +12,22 @@ layout: base
 </section>
 
 <div class="row">
-  <div class="col-sm-1">
-    <nav class="hidden-phone">
+  <div class="col-md-2 col-sm-1">
+    <nav class="hidden-xs">
       {% if page.previous.url %}
-        <a href="{{page.previous.url}}"><i class="fa fa-chevron-circle-left"></i></a>
+        <a href="{{page.previous.url}}" class="nav-article-left"><i class="fa fa-chevron-circle-left"></i></a>
       {% endif %}
     </nav>
   </div>
-  <div class="col-sm-10">
+  <div class="col-md-8 col-sm-10">
     <div id="post" class="post post-body">
       {{ content }}
     </div>
   </div>
-  <div class="col-sm-1">
-    <nav class="hidden-phone">
+  <div class="col-md-2 col-sm-1">
+    <nav class="hidden-xs">
       {% if page.next.url %}
-        <a href="{{page.next.url}}"><i class="fa fa-chevron-circle-right"></i></a>
+        <a href="{{page.next.url}}" class="nav-article-right"><i class="fa fa-chevron-circle-right"></i></a>
       {% endif %}
     </nav>
   </div>

@@ -16,9 +16,15 @@ redcarpet:
 
 title:            Dave Gandy
 twitter:          davegandy
+github:           davegandy
+
+work:
+  name:           Kyruus
+  url:            http://kyruus.com
 
 fontawesome:
   version:        4.0.3
+  url:            http://fontawesome.io
 bootstrap:
   version:        3.0.2
 jquery:
